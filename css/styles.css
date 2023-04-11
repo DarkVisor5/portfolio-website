@@ -7,7 +7,13 @@
   --mid-grey: #B0B0B0;
   --dark-grey: #808080;
   --dark-blue: #333333;
+  --input-border-color: #B0B0B0;
+  --input-margin-bottom: 1rem;
+  --input-padding: 0.5rem;
+  --input-font-size: 1rem;
 }
+
+
 
 /* Importare il font Roboto da Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
@@ -103,15 +109,15 @@ footer img {
 }
 
 input[type="email"],
-input[type="tel"],
-textarea {
+input[type="tel"] {
   display: block;
   width: 100%;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  font-size: 1rem;
-  border: 1px solid var(--mid-grey);
+  margin-bottom: var(--input-margin-bottom);
+  padding: var(--input-padding);
+  font-size: var(--input-font-size);
+  border: 1px solid var(--input-border-color);
 }
+
 
 input[type="submit"] {
   display: inline-block;

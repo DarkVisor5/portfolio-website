@@ -7,6 +7,8 @@
 
 /* Colori */
 
+
+
 /* Importare il font Roboto da Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
@@ -129,14 +131,6 @@ input[type="tel"] {
   border: 1px solid #B0B0B0;
 }
 
-textarea {
-  display: block;
-  width: 100%;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  font-size: 1rem;
-  border: 1px solid #B0B0B0;
-}
 
 input[type="submit"] {
   display: inline-block;
