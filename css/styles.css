@@ -1,5 +1,4 @@
 
-/* Colori */
 :root {
   --white: #FFFFFF;
   --black: #000000;
@@ -14,11 +13,8 @@
 }
 
 
-
-/* Importare il font Roboto da Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
-/* Stili di base */
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--black);
@@ -26,7 +22,6 @@ body {
   line-height: 1.6;
 }
 
-/* Dimensioni e altezze di linea per gli elementi del testo predefiniti */
 h1 {
   font-size: 2.5em;
   line-height: 1.2;
@@ -96,7 +91,7 @@ footer img {
   margin: 0.5rem;
 }
 
-/* Stili specifici per la pagina contact */
+
 #contact-form {
   max-width: 600px;
   margin: 0 auto;
