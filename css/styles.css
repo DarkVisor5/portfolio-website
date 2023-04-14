@@ -319,4 +319,53 @@ svg path {
   margin: 5px 0;
 }
 
-/* Media Queries
+
+/* Media Queries */
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header {
+    flex-direction: column;
+  }
+
+  .main-navigation {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+
+  .navigation-list {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked ~ .navigation-list {
+    display: block;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
