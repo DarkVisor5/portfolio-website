@@ -335,6 +335,40 @@ svg path {
   }
 }
 
+@media all and (max-width: 500px) {
+  .page-header {
+    align-items: center;
+  }
+
+  .page-header img {
+    display: block;
+    margin: 0 auto;
+  }
+  .page-header {
+    align-items: center;
+  }
+
+  .page-header img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .main-navigation {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .navigation-list {
+    display: inline-flex;
+    padding-left: 0;
+  }
+
+  .navigation-list li {
+    margin-right: 1rem;
+  }
+}
+
+
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
@@ -362,5 +396,39 @@ svg path {
 @media (max-width: 500px) {
   .animation_city {
     width: 100%;
+  }
+}
+
+/* Add this to your CSS */
+.menu-toggle {
+  display: none;
+}
+
+@media all and (max-width: 768px) {
+  .menu-toggle {
+      display: block;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+  }
+
+  .main-navigation {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: none;
+      flex-direction: column;
+      background-color: var(--light-grey);
+  }
+
+  .navigation-list {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .navigation-list li {
+      margin: 0;
+      padding: 0.5rem;
   }
 }

@@ -7,20 +7,15 @@
         <link href="https://fonts.google.com/share?selection.family=Roboto:wght@100" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
     </head>
     <body>
         <header class="page-header">
+              
             <!--Add logo here-->
-            <!--Github bug-->
             <img src="img/logo.png" alt="logo" width="200" height="200" class="page-header__item">
-
+            <button class="menu-toggle page-header__item" aria-label="Menu">☰</button> <!-- Add this line -->
             <nav class="main-navigation page-header__item">
-                <input type="checkbox" id="menu-toggle" />
-                <label for="menu-toggle" class="hamburger">
-                    <span class="hamburger__line"></span>
-                    <span class="hamburger__line"></span>
-                    <span class="hamburger__line"></span>
-                </label>
                 <ul role="menubar" class="navigation-list">
                     <li role="presentation">
                         <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
@@ -68,5 +63,6 @@
         </footer>
         
     <script src="js/tota11y.min.js"></script>
+    <script src="js/menu-fan.js"></script>
     </body>
 </html>
