@@ -1,7 +1,7 @@
 /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
+
 * Browsers: last 4 version
 */
 
@@ -568,7 +568,7 @@ svg path {
 }
 .animation_city {
   max-width: 100%;
-  width: 800px; /* La larghezza originale dell'animazione */
+  width: 800px; 
   height: auto;
   overflow: hidden;
 }

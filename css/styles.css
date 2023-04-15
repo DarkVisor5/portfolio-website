@@ -7,7 +7,7 @@
   --dark-grey: #808080;
   --dark-blue: #333333;
   --green:#357b70;
-  --lightergreen:#58a58c;
+  --light-green:#58a58c;
   --input-border-color: #B0B0B0;
   --input-margin-bottom: 1rem;
   --input-padding: 0.5rem;
@@ -143,7 +143,7 @@ input[type="submit"] {
   margin:0 auto;
 }
 #Message_written:hover {
-  background-color: var(--lightergreen);
+  background-color: var(--light-green);
 }
 
 .standard-label {
@@ -165,7 +165,7 @@ input[type="submit"] {
 }
 
 .button:hover, button:hover {
-  background-color: var(--lightergreen);
+  background-color: var(--light-green);
   cursor: pointer;
 }
 
@@ -409,7 +409,7 @@ svg path {
 }
 .animation_city {
   max-width: 100%;
-  width: 800px; /* La larghezza originale dell'animazione */
+  width: 800px; 
   height: auto;
   overflow: hidden;
 }
@@ -472,5 +472,3 @@ label[for="my-input"] {
   display: block;
   margin-bottom: 0.5rem;
 }
-
-
