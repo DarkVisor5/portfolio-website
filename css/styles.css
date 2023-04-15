@@ -21,6 +21,7 @@ body {
   color: var(--black);
   background-color: var(--white);
   line-height: 1.6;
+  margin: 0;
 }
 
 /* Elements */
@@ -117,6 +118,7 @@ input[type="submit"] {
   border: none;
   cursor: pointer;
 }
+
 input[type="submit"]:hover {
   background-color: var(--dark-grey);
 }
@@ -255,6 +257,7 @@ svg path {
   animation: myAnim 3s infinite;
   -webkit-animation: myAnim 3s infinite;
 }
+
 /* Homepage Grid */
 .grid-container {
   display: grid;
@@ -285,7 +288,6 @@ svg path {
   margin: 0 auto;
   padding: 1rem;
 }
-
 .about-content {
   display: flex;
   flex-direction: column;
@@ -296,6 +298,33 @@ svg path {
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-header {
+    flex-direction: column;
+  }
+
+  .page-header__item {
+    flex: none;
+    margin-bottom: 1rem;
+  }
+
+  .page-header__item:last-child {
+    text-align: center;
   }
 }
 
@@ -315,73 +344,5 @@ svg path {
   }
   h1 {
     font-size: 22px;
-  }
-}
-
-/* Hamburger Menu */
-.hamburger-toggle {
-  display: none;
-}
-
-.hamburger-label {
-  display: none;
-  cursor: pointer;
-  position: relative;
-  width: 30px;
-  height: 20px;
-  z-index: 2;
-}
-
-.hamburger__line {
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: var(--black);
-  margin: 5px 0;
-}
-/* Media Queries */
-@media (max-width: 600px) {
-  .main-navigation {
-    display: none;
-  }
-  
-  .hamburger {
-    display: flex;
-  }
-
-  input[type="checkbox"] {
-    display: none;
-  }
-
-  .navigation-list {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: var(--light-grey);
-  }
-
-  input[type="checkbox"]:checked ~ .navigation-list {
-    display: flex;
-  }
-}
-@media all and (max-width: 750px) {
-  .hamburger-label {
-    display: block;
-  }
-  .main-navigation {
-    display: none;
-  }
-  .hamburger-toggle:checked ~ .main-navigation {
-    display: block;
-  }
-  .navigation-list {
-    display: flex;
-    flex-direction: column;
-  }
-  .navigation-list li {
-    margin-bottom: 10px;
   }
 }
