@@ -347,9 +347,20 @@ svg path {
     font-size: 22px;
   }
 }
+.animation_city {
+  max-width: 100%;
+  width: 800px; /* La larghezza originale dell'animazione */
+  height: auto;
+  overflow: hidden;
+}
+
+.animation_city svg {
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 500px) {
-  svg {
+  .animation_city {
     width: 100%;
-    height: auto;
   }
 }
