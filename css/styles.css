@@ -44,6 +44,7 @@ hr {
   border: none;
   border-top: 1px solid var(--mid-grey);
   margin: 1rem 0;
+  width: 100%;
 }
 
 /* Layout and Components */
