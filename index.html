@@ -1,68 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> 
-        <meta charset="utf-8">
-        <title>index</title>
-        <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
-        <link href="https://fonts.google.com/share?selection.family=Roboto:wght@100" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.production.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TodoList</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/script.js"></script>
     </head>
-    <body>
-        <header class="page-header">
-              
-            <!--Add logo here-->
-            <img src="img/logo.png" alt="logo" width="200" height="200" class="page-header__item">
-            <button class="menu-toggle page-header__item" aria-label="Menu">☰</button> <!-- Add this line -->
-            <nav class="main-navigation page-header__item">
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        
-
-        <div class="profile grid-container">
-            <img src="img/leo.jpg" class="profile__portrait grid-item" alt="A photo of me">
-            <div class="profile-content grid-item">
-              <h1>Hello World!</h1>
-              <p>
-                My name is Leonardo. I am a web developer from Italy.
-              </p>
-              <a href="#">Check out some of my code</a>
+<body>
+    <div class="background-container"></div>
+    <div class="wrapper">
+        <div class="main-containers">
+            <div id="left-container">
+                <h2>Create Todo</h2>
+                <textarea id="card-text" class="card" placeholder="Enter a todo"></textarea>
+                <button id="add-todo">Add Todo</button>
+                <div id="deck-container">
+                    <h2>Deck</h2>
+                    <div id="deck"></div>
+                </div>
             </div>
-          </div>
-          
-        
-        <footer class="page-footer">
-            <p>Find me on</p>
-            <div class="social-media">
-                <a href="https://github.com/DarkVisor5?tab=repositories" target="_blank">
-                    <img src="img/github_icon.svg" alt="Il mio profilo GitHub">
-                </a>
-                <a href="https://twitter.com/leonardolanaia" target="_blank">
-                    <img src="img/twitter_icon.svg" alt="Il mio profilo Twitter">
-                </a>
-                <a href="https://www.linkedin.com/in/leonardo-lanaia-31039a83" target="_blank">
-                    <img src="img/linkedin_icon.svg" alt="Il mio profilo LinkedIn">
-                </a>
+            <div id="center-container">
+                <h2 class="center-text">Current Todo</h2>
+                <div id="current-card"></div>
             </div>
-            
-        </footer>
-        
-    <script src="js/tota11y.min.js"></script>
-    <script src="js/menu-fan.js"></script>
-    </body>
+            <div id="right-container">
+                <h2>Completed Todos</h2>
+                <div id="completed-cards"></div>
+            </div>
+        </div>
+        <div id="description-container">
+            <h1>Your Todo List</h1>
+            <p>If you're unsure where to begin, simply start with the drawn card. Each task will be represented by a card,
+                and all the cards together will form a deck, which will be shuffled. You can easily track your completed tasks.
+                For larger tasks, such as "Prepare dinner," break them down into smaller tasks like "Peel potatoes" or "Boil water."
+                If you're having difficulty breaking down more complex tasks, simply ask ChatGPT for assistance, add the tasks to your deck,
+                and never feel overwhelmed again.
+            </p>
+        </div>
+    </div>
+    <a href="../index.html">
+        <button>Return to Porfolio</button>
+    </a>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
