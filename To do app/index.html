@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TodoList</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+<body>
+    <div class="background-container"></div>
+    <div class="wrapper">
+        <div class="main-containers">
+            <div id="left-container">
+                <h2>Create Todo</h2>
+                <textarea id="card-text" class="card" placeholder="Enter a todo"></textarea>
+                <button id="add-todo">Add Todo</button>
+                <div id="deck-container">
+                    <h2>Deck</h2>
+                    <div id="deck"></div>
+                </div>
+            </div>
+            <div id="center-container">
+                <h2 class="center-text">Current Todo</h2>
+                <div id="current-card"></div>
+            </div>
+            <div id="right-container">
+                <h2>Completed Todos</h2>
+                <div id="completed-cards"></div>
+            </div>
+        </div>
+        <div id="description-container">
+            <h1>Your Todo List</h1>
+            <p>If you're unsure where to begin, simply start with the drawn card. Each task will be represented by a card,
+                and all the cards together will form a deck, which will be shuffled. You can easily track your completed tasks.
+                For larger tasks, such as "Prepare dinner," break them down into smaller tasks like "Peel potatoes" or "Boil water."
+                If you're having difficulty breaking down more complex tasks, simply ask ChatGPT for assistance, add the tasks to your deck,
+                and never feel overwhelmed again.
+            </p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
